@@ -85,4 +85,24 @@ document.addEventListener("DOMContentLoaded", function () {
     
   });
   
+  document.addEventListener("DOMContentLoaded", function () {
+    // Sélectionne tous les boutons avec la classe "btn"
+    let toolsBtns = document.querySelectorAll('.btn');
+  
+    // Ajoute un écouteur d'événements à chaque bouton "Outils"
+    toolsBtns.forEach(function (btn) {
+      btn.addEventListener('click', function (event) {
+        event.preventDefault();
+  
+        // Récupère la liste des outils associée au bouton
+        let toolsList = btn.nextElementSibling;
+  
+        // Affiche ou masque la liste des outils
+        if (toolsList) {
+          toolsList.classList.toggle('show');
+        }
+      });
+    });
+  });
+  
   

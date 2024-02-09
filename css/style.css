@@ -280,6 +280,15 @@ span {
   color: var(--main-color);
 } */
 
+.tools-list {
+    display: none;
+  }
+  
+  .tools-list.show {
+    display: block;
+  }
+  
+
 
 .services-box i {
     font-size: 7rem;
